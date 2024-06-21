@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<svg width="480" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <title>menu</title>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="svg_8">
+   <rect fill="#ffffff" height="32" id="svg_3" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="null" stroke-width="0" width="448" x="16" y="96"/>
+   <circle cx="16" cy="112" fill="#ffffff" fill-opacity="null" id="svg_6" r="16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="null" stroke-width="0"/>
+   <circle cx="464" cy="112" fill="#ffffff" fill-opacity="null" id="svg_7" r="16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="null" stroke-width="0"/>
+  </g>
+  <g id="svg_9">
+   <rect fill="#ffffff" height="32" id="svg_10" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="null" stroke-width="0" width="448" x="16" y="215"/>
+   <circle cx="16" cy="231" fill="#ffffff" fill-opacity="null" id="svg_11" r="16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="null" stroke-width="0"/>
+   <circle cx="464" cy="231" fill="#ffffff" fill-opacity="null" id="svg_12" r="16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="null" stroke-width="0"/>
+  </g>
+  <g id="svg_13">
+   <rect fill="#ffffff" height="32" id="svg_14" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="null" stroke-width="0" width="448" x="16" y="352"/>
+   <circle cx="16" cy="368" fill="#ffffff" fill-opacity="null" id="svg_15" r="16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="null" stroke-width="0"/>
+   <circle cx="464" cy="368" fill="#ffffff" fill-opacity="null" id="svg_16" r="16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="null" stroke-width="0"/>
+  </g>
+ </g>
+</svg>
