@@ -5,14 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olivier MAISONNEUVE - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .col {
-            border: 1px solid #333;
-        }
-    </style>
 </head>
 
 <body>
@@ -21,32 +15,66 @@
         <nav>
             <ul>
                 <li><a href="#CV">CV</a></li>
-                <li><a href="#Competences">COMPÉTENCES</a></li>
-                <li><a href="#Projets">PROJETS</a></li>
-                <li><a href="#Contact">CONTACTEZ-MOI</a></li>
+                <li><a href="#competences">COMPÉTENCES</a></li>
+                <li><a href="#projets">PROJETS</a></li>
+                <li><a href="#contact">CONTACTEZ-MOI</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="top"></div>
-        <section class="container" id="presentation">
-            <div class="row justify-content-center align-items-center">
-                <p class="text-center display-1">Site en construction</p>
-                <div class="col-12 col-md-8 col-lg-3">
-                    <img src="assets/images/Arothron_nigropunctatus_-_Wilhelma_02.jpg" alt="portrait d'Olivier Maisonneuve" class="rounded-circle mx-auto d-block">
-                    <p class="text-center">Bonjour, je suis Olivier Maisonneuve</p>
-                    <p class="text-center">Développeur back-end</p>
-                    <p class="text-center">Après plus de 20 ans dans le bâtiment, j'ai entamé début avril une reconversion pour devenir développeur Web et Web Mobile.
-
-                    </p>
+        <section id="presentation">
+            <div>
+                <h1>Site en construction</h1>
+                <img src="assets/images/photo_Olivier_Maisonneuve.JPG" alt="portrait d'Olivier Maisonneuve"
+                    class="portrait">
+                <p><strong>Bonjour, je suis Olivier Maisonneuve</strong></p>
+                <p><em>Développeur Web et Web Mobile</em></p>
+                <p>Après plus de 20 ans dans le bâtiment, j'ai entamé début avril une reconversion pour devenir
+                    développeur Web. Autonome, doté d'un esprit d'analyse et toujours prêt à apprendre, je je souhaite
+                    m’investir dans les projets de votre entreprise.
+                </p>
+            </div>
+        </section>
+        <section id="CV">
+            <div><a href="assets/data/Olivier Maisonneuve CV.pdf">Télécharger mon CV</a></div>
+        </section>
+        <section id="competences">
+            <div>
+                <h2>Mes compétences</h2>
+                <div id="logos">
+                    <img src="assets/images/java.png" alt="logo Java">
+                    <img src="assets/images/springboot2.png" alt="logo Springboot">
+                    <img src="assets/images/PHP couleur.png" alt="logo PHP">
+                    <img src="assets/images/symfony.png" alt="logo Symfony">
+                    <img src="assets/images/Eclipse2.png" alt="logo Eclipse">
+                    <img src="assets/images/VSCode.png" alt="logo Visual Studio Code">
+                    <img src="assets/images/SQLServer2.png" alt="logo SQL Server">
+                    <img src="assets/images/mySQL2.png" alt="logo MySQL">
+                    <img src="assets/images/javascript.png" alt="logo Javascript">
+                    <img src="assets/images/HTML5.png" alt="logo HTML5">
+                    <img src="assets/images/CSS3.png" alt="logo CSS3">
                 </div>
             </div>
         </section>
-        <section>
-            <p><a href="https://opyms.github.io/GameOfLife/">Un petit jeu de la vie en JS</a></p>
-        </section>
-        <section>
-            <p><a href="https://opyms.github.io/PlantesDeNantes/">Jouer avec les API de la ville de Nantes</a></p>
+        <section id="projets">
+            <h2>Mes projets</h2>
+            <section id="jeuDeLaVie">
+                <img src="assets/images/jeu_de_la_vie.jpg" alt="image d'un plateau de jeu de la vie">
+                <div><a href="https://opyms.github.io/GameOfLife/">Un petit jeu de la vie en JS</a></h3>
+                    <p>Une implémentation du classique jeu de la
+                            vie de Conway en Javascript.</p>
+                </div>
+            </section>
+            <section id="plantesNantes">
+                <div><a href="https://opyms.github.io/PlantesDeNantes/">Jouer avec les API de la ville de Nantes</a>
+                    <p></p>
+                    <p>Nantes Métropole fournit des API nombreuses et variées. L'occasion de s'amuser un peu et de
+                        rendre hommage à mon grand-père qui fut jardinier à la Ville de Nantes durant toute sa carrière
+                    </p>
+                </div>
+                <img src="assets/images/plantes_de_nantes.jpg" alt="une image de plantes de Nantes">
+            </section>
         </section>
     </main>
 </body>

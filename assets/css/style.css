@@ -21,21 +21,21 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 50px;
-	box-shadow: 0 1px 8px #06623d;
-	background: #06623d;
+	box-shadow: 0 1px 8px #06623e;
+	background: #06623e;
 	left: 0;
 	right: 0;
 	color: white;
 	font-size: 1.2em;
 	font-weight: 900;
-	height: 10vh;
+	height: 3vh;
 }
 
-header nav{
+header nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 8vh;
+	height: 3vh;
 }
 
 header li {
@@ -51,10 +51,106 @@ header a {
 }
 
 header a:hover {
-	color: rgb(0, 128, 192);
+	color: #033117;
 }
 
 /*Main*/
+main{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 #top {
 	height: 9vh;
+}
+
+main section {
+	width: 100vw;
+	margin-bottom: 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main section>div {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#presentation img {
+	width: 10vmax;
+	border-radius: 50%;
+	border: 5px solid #06623e;
+	margin: 1vmin;
+}
+
+#presentation {
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+#presentation strong{
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+#presentation em {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+#CV a{
+	background: #06623e;
+	color : white;
+	padding: 1vmax;
+}
+
+#competences{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#logos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#competences img{
+	width: 5vmax;
+	margin: 1vmax;
+}
+
+#projets img{
+	width: 40%;
+}
+
+#jeuDeLaVie{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#jeuDeLaVie>div,img{
+	margin: 10px;
+}
+
+#plantesNantes{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#plantesNantes>div,img{
+	margin: 10px;
 }
