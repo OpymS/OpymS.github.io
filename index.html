@@ -30,8 +30,8 @@
                     class="portrait">
                 <p><strong>Bonjour, je suis Olivier Maisonneuve</strong></p>
                 <p><em>Développeur Web et Web Mobile</em></p>
-                <p>Après plus de 20 ans dans le bâtiment, j'ai entamé début avril une reconversion pour devenir
-                    développeur Web. Autonome, doté d'un esprit d'analyse et toujours prêt à apprendre, je je souhaite
+                <p class="center-text">Après plus de 20 ans dans le bâtiment, j'ai entamé début avril une reconversion
+                    pour devenir développeur Web. Autonome, doté d'un esprit d'analyse et toujours prêt à apprendre, je je souhaite
                     m’investir dans les projets de votre entreprise.
                 </p>
             </div>
@@ -49,6 +49,7 @@
                     <img src="assets/images/symfony.png" alt="logo Symfony">
                     <img src="assets/images/Eclipse2.png" alt="logo Eclipse">
                     <img src="assets/images/VSCode.png" alt="logo Visual Studio Code">
+                    <img src="assets/images/github.png" alt="logo Github">
                     <img src="assets/images/SQLServer2.png" alt="logo SQL Server">
                     <img src="assets/images/mySQL2.png" alt="logo MySQL">
                     <img src="assets/images/javascript.png" alt="logo Javascript">
@@ -59,24 +60,72 @@
         </section>
         <section id="projets">
             <h2>Mes projets</h2>
-            <section id="jeuDeLaVie">
-                <img src="assets/images/jeu_de_la_vie.jpg" alt="image d'un plateau de jeu de la vie">
-                <div><a href="https://opyms.github.io/GameOfLife/">Un petit jeu de la vie en JS</a></h3>
-                    <p>Une implémentation du classique jeu de la
+            <div>
+                <div class="projet" id="jeuDeLaVie">
+                    <img src="assets/images/jeu_de_la_vie.jpg" alt="image d'un plateau de jeu de la vie">
+                    <div class="descriptionProjet">
+                        <div class="subtitle">
+                            <h3>Jeu de la vie</h3>
+                            <div>
+                                <a href="https://github.com/OpymS/GameOfLife"><img src="assets/images/github.png"
+                                        alt="lien vers le dépôt Github" class="petitLogo"></a>
+                                <a href="https://opyms.github.io/GameOfLife/"><img src="assets/images/lien hypertexte.png"
+                                        alt="lien vers l'implémentation" class="petitLogo"></a>
+                            </div>
+                        </div>
+                        <p class="center-text">Une implémentation du classique jeu de la
                             vie de Conway en Javascript.</p>
+                    </div>
                 </div>
-            </section>
-            <section id="plantesNantes">
-                <div><a href="https://opyms.github.io/PlantesDeNantes/">Jouer avec les API de la ville de Nantes</a>
-                    <p></p>
-                    <p>Nantes Métropole fournit des API nombreuses et variées. L'occasion de s'amuser un peu et de
-                        rendre hommage à mon grand-père qui fut jardinier à la Ville de Nantes durant toute sa carrière
-                    </p>
+                <div class="projet" id="plantesNantes">
+                    <img src="assets/images/plantes_de_nantes.jpg" alt="une image de plantes de Nantes">
+                    <div class="descriptionProjet">
+                        <div class="subtitle">
+                            <h3>Plantes de Nantes</h3>
+                            <div>
+                                <a href="https://github.com/OpymS/PlantesDeNantes"><img src="assets/images/github.png"
+                                        alt="lien vers le dépôt Github" class="petitLogo"></a>
+                                <a href="https://opyms.github.io/PlantesDeNantes/"><img src="assets/images/lien hypertexte.png"
+                                        alt="lien vers l'implémentation" class="petitLogo"></a>
+                            </div>
+                        </div>
+                        <p class="center-text">Nantes Métropole fournit des API nombreuses et variées. L'occasion de s'amuser un peu et de
+                        rendre hommage à mon grand-père qui fut jardinier à la Ville de Nantes durant toute sa
+                        carrière.</p>
+                    </div>
                 </div>
-                <img src="assets/images/plantes_de_nantes.jpg" alt="une image de plantes de Nantes">
-            </section>
+                <div class="projet" id="portfolio">
+                    <img src="assets/images/portfolio.png" alt="une image de mon portfolio">
+                    <div class="descriptionProjet">
+                        <div class="subtitle">
+                            <h3>Mon portfolio</h3>
+                            <div>
+                                <a href="https://github.com/OpymS/OpymS.github.io"><img src="assets/images/github.png"
+                                        alt="lien vers le dépôt Github" class="petitLogo"></a>
+                                <a href="https://opyms.github.io/"><img src="assets/images/lien hypertexte.png"
+                                        alt="lien vers l'implémentation" class="petitLogo"></a>
+                            </div>
+                        </div>
+                        <p class="center-text">Ce projet correspond au site que vous êtes en train de consulter !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div>
+                <h2>Contact</h2>
+                <div>
+                    <a href="https://github.com/OpymS/"><img src="assets/images/github.png" alt="lien vers mon Github"></a>
+                    <a href="https://www.linkedin.com/in/olivier-maisonneuve-58b203254"><img src="assets/images/linkedIn.png" alt="lien vers mon LinkedIn"></a>
+                    <a href="mailto:olivier.maisonneuve@proton.me"><img src="assets/images/mail.png" alt="m'écrire un mail"></a>
+                    <a href="https://www.codingame.com/profile/af4b25e8d64efa73cbf44e84aa5be8258023785"><img src="assets/images/codingame.png" alt="lien vers mon compte Codingame"></a>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

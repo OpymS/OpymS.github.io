@@ -12,6 +12,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	background: #f0f0f0;
 }
 
 /* Header */
@@ -66,9 +67,14 @@ main{
 	height: 9vh;
 }
 
+h2{
+	font-size: xx-large;
+	margin: 3vh;
+}
+
 main section {
 	width: 100vw;
-	margin-bottom: 5vh;
+	padding-bottom: 5vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -83,26 +89,31 @@ main section>div {
 	align-items: center;
 }
 
-#presentation img {
-	width: 10vmax;
-	border-radius: 50%;
-	border: 5px solid #06623e;
-	margin: 1vmin;
-}
-
 #presentation {
 	font-size: 1.1em;
 	font-weight: 400;
 }
 
+#presentation img {
+	width: 10vmax;
+	border-radius: 50%;
+	border: 5px solid #06623e;
+	margin: 1vmin
+}
+
 #presentation strong{
 	font-size: 1.5em;
 	font-weight: 500;
+	margin-bottom: 50px;
 }
 
 #presentation em {
 	font-size: 2em;
 	font-weight: 500;
+}
+
+#presentation>div>*{
+	margin-bottom: 1em;
 }
 
 #CV a{
@@ -112,6 +123,7 @@ main section>div {
 }
 
 #competences{
+	background: linear-gradient(135deg,#06623e, #abea82);
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -121,36 +133,127 @@ main section>div {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 #competences img{
-	width: 5vmax;
-	margin: 1vmax;
+	width: 5vw;
+	margin: 4px;
+	padding: 10px;
+	border-radius: 3px;
+	background: white;
 }
 
-#projets img{
+#projets>div{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.projet{
+	width: 15vw;
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	margin-right: 1vw;
+	margin-left: 1vw;
+	margin-bottom: 1vh;
+	border: 5px solid #abea82;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #abea82;
+	background: white;
+}
+
+.projet>img{
+	margin: 10px;
+}
+
+.descriptionProjet{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #abea82;
+}
+
+.subtitle{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.subtitle>div{
+	width: 20%;
+}
+
+.petitLogo {
 	width: 40%;
 }
 
-#jeuDeLaVie{
+.center-text{
+	text-align: center;
+}
+
+#contact {
+	background: linear-gradient(135deg, #f0f0f0, #abea82, #06623e);
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
 }
 
-#jeuDeLaVie>div,img{
-	margin: 8px;
-}
-
-#plantesNantes{
+#contact>div>div{
+	width: 100%;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
+	justify-content: space-evenly;
 }
 
-#plantesNantes>div,img{
-	margin: 8px;
+#contact img{
+	width: 3vw;
+}
+
+footer {
+	padding: 20px 50px;
+	box-shadow: 0 -1px 8px #06623e;
+	background: #06623e;
+	left: 0;
+	right: 0;
+	height: 3vh;
+}
+
+@media screen and (min-width:501px) and (max-width: 1000px) {
+	main section>div {
+		width: 90vw;
+	}
+
+	.projet {
+		width: 40vw;
+		height: auto;
+	}
+
+	#projets>div {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	main section>div {
+			width: 100vw;
+		}
+
+	.projet {
+		width: 90vw;
+		height: auto;
+	}
+
+	#projets>div {
+		width: 100%;
+	}
 }
