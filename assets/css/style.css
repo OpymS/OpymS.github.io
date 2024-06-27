@@ -107,11 +107,6 @@ main section>div {
 	margin: 1vmin
 }
 
-#presentation strong {
-	font-size: 1.5em;
-	font-weight: 500;
-	margin-bottom: 50px;
-}
 
 #presentation em {
 	font-size: 2em;
@@ -294,7 +289,7 @@ footer {
 	}
 
 	.projet {
-		width: 40vw;
+		width: 60vw;
 		height: auto;
 	}
 
@@ -305,7 +300,9 @@ footer {
 
 @media screen and (max-width: 500px) {
 	header {
+		padding: 20px 5px;
 		height: 4em;
+		font-size: 1em;
 	}
 
 	header nav {
@@ -320,7 +317,7 @@ footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-items: start;
+		align-items: end;
 		padding: 0 20px;
 	}
 
