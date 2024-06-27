@@ -39,10 +39,16 @@ header nav {
 	height: 3vh;
 }
 
-header li {
+nav>ul {
 	list-style: none;
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	padding: 0 20px;
+}
+
+nav>ul>li {
+	padding-left: 20px;
 }
 
 header a {
@@ -56,7 +62,7 @@ header a:hover {
 }
 
 /*Main*/
-main{
+main {
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
@@ -67,7 +73,7 @@ main{
 	height: 9vh;
 }
 
-h2{
+h2 {
 	font-size: xx-large;
 	margin: 3vh;
 }
@@ -101,7 +107,7 @@ main section>div {
 	margin: 1vmin
 }
 
-#presentation strong{
+#presentation strong {
 	font-size: 1.5em;
 	font-weight: 500;
 	margin-bottom: 50px;
@@ -112,39 +118,49 @@ main section>div {
 	font-weight: 500;
 }
 
-#presentation>div>*{
+#presentation>div>* {
 	margin-bottom: 1em;
 }
 
-#CV a{
+#CV a {
 	background: #06623e;
-	color : white;
+	color: white;
 	padding: 1vmax;
+	transition: transform .1s;
 }
 
-#competences{
-	background: linear-gradient(135deg,#06623e, #abea82);
+#CV a:hover {
+	transform: scale(1.1);
+}
+
+#competences {
+	background: linear-gradient(135deg, #06623e, #abea82);
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 }
 
-#logos{
+#logos {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-#competences img{
+#competences img {
 	width: 5vw;
 	margin: 4px;
 	padding: 10px;
 	border-radius: 3px;
 	background: white;
+	transition: transform .1s;
 }
 
-#projets>div{
+#competences img:hover {
+	transform: scale(1.1);
+}
+
+#projets>div {
 	width: 80%;
 	display: flex;
 	flex-direction: row;
@@ -152,7 +168,7 @@ main section>div {
 	justify-content: center;
 }
 
-.projet{
+.projet {
 	width: 15vw;
 	height: 40vh;
 	display: flex;
@@ -164,15 +180,20 @@ main section>div {
 	margin-bottom: 1vh;
 	border: 5px solid #abea82;
 	border-radius: 10px;
-	box-shadow: 5px 5px 5px #abea82;
-	background: white;
+	box-shadow: 5px 5px 5px #06623e;
+	background: #abea82;
+	transition: transform .1s;
 }
 
-.projet>img{
-	margin: 10px;
+.projet:hover {
+	transform: scale(1.05);
 }
 
-.descriptionProjet{
+.projet>img {
+	padding: 10px;
+}
+
+.descriptionProjet {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -182,7 +203,7 @@ main section>div {
 	background: #abea82;
 }
 
-.subtitle{
+.subtitle {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -190,15 +211,21 @@ main section>div {
 	padding-bottom: 10px;
 }
 
-.subtitle>div{
+.subtitle>div {
 	width: 20%;
 }
 
 .petitLogo {
 	width: 40%;
+	transition: transform .1s;
 }
 
-.center-text{
+.petitLogo:hover {
+	transform: scale(1.5);
+}
+
+
+.center-text {
 	text-align: center;
 }
 
@@ -209,14 +236,19 @@ main section>div {
 	justify-content: flex-start;
 }
 
-#contact>div>div{
+#contact>div>div {
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 }
 
-#contact img{
+#contact img {
 	width: 3vw;
+	transition: transform .1s;
+}
+
+#contact img:hover {
+	transform: scale(1.1);
 }
 
 footer {
@@ -229,6 +261,34 @@ footer {
 }
 
 @media screen and (min-width:501px) and (max-width: 1000px) {
+	header {
+		height: 4em;
+	}
+
+	header nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 4em;
+	}
+
+	nav>ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: start;
+		padding: 0 20px;
+	}
+
+	nav>ul>li {
+		padding-left: 0px;
+	}
+
+	#top {
+		height: 8em;
+	}
+
 	main section>div {
 		width: 90vw;
 	}
@@ -243,10 +303,38 @@ footer {
 	}
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
+	header {
+		height: 4em;
+	}
+
+	header nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 4em;
+	}
+
+	nav>ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: start;
+		padding: 0 20px;
+	}
+
+	nav>ul>li {
+		padding-left: 0px;
+	}
+
+	#top {
+		height: 8em;
+	}
+
 	main section>div {
-			width: 100vw;
-		}
+		width: 100vw;
+	}
 
 	.projet {
 		width: 90vw;
@@ -255,5 +343,6 @@ footer {
 
 	#projets>div {
 		width: 100%;
+		margin: 10px;
 	}
 }
