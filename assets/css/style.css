@@ -80,7 +80,8 @@ h2 {
 
 main section {
 	width: 100vw;
-	padding-bottom: 5vh;
+	scroll-margin-top: 9vh;
+	padding-bottom: 10vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -128,12 +129,10 @@ main section>div {
 	transform: scale(1.1);
 }
 
-#competences {
+#competences div{
 	background: linear-gradient(135deg, #06623e, #abea82);
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
 }
+
 
 #logos {
 	display: flex;
@@ -284,6 +283,11 @@ footer {
 		height: 8em;
 	}
 
+	main section {
+		/* scroll-margin-top: 5em; */
+		padding-bottom: 9em;
+	}
+
 	main section>div {
 		width: 90vw;
 	}
@@ -327,6 +331,12 @@ footer {
 
 	#top {
 		height: 8em;
+	}
+
+	main section {
+		margin-top: -8em;
+		padding-top: 8em;
+		padding-bottom: 10px;
 	}
 
 	main section>div {
